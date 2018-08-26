@@ -11,6 +11,8 @@ import {RecipePageModule} from '../pages/recipe/recipe.module';
 import{RecipesPageModule} from '../pages/recipes/recipes.module';
 import{ShoppingListPageModule} from '../pages/shopping-list/shopping-list.module';
 import{TabsPageModule} from '../pages/tabs/tabs.module';
+import{HomePageModule} from '../pages/home/home.module';
+
 Pro.init('D31B0942', {
   appVersion: '0.0.1'
 })
@@ -22,7 +24,7 @@ Pro.init('D31B0942', {
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),EditRecipePageModule,RecipePageModule, RecipesPageModule,
-    ShoppingListPageModule, TabsPageModule
+    ShoppingListPageModule, TabsPageModule, HomePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
