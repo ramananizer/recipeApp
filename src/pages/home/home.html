@@ -7,8 +7,8 @@
 
 
 
-<ion-content style="height:100%; padding: -5px;"   class="bck-image" >
-<ion-grid style="position: fixed;top: 30%; ">
+<ion-content no-padding  class="bck-image" class="bck-image" style="height:100%; padding: -5px;margin:-5px" >
+<ion-grid  style="position: fixed;top: 30%; ">
   <ion-row  justify-content-center >
     <ion-col  >
         <ion-label text-center
@@ -26,7 +26,7 @@
     <ion-col>
         <button text-uppercase
         style="font-family:Montserrat;font-size: 18px;color:#fff; font-weight: 200 "
-        block large ion-button color="danger">create new account</button>
+        block large ion-button color="danger" (click)="goToLoginPage()">create new account</button>
     </ion-col>
   </ion-row>
   <ion-row>
@@ -58,11 +58,23 @@
         </button>
       </ion-col>
     </ion-row>
+    <!-- <ion-row style="bottom:0px; position: absolute">
+      <ion-col col-12>
+          <button text-uppercase
+          style="font-family:Montserrat;font-size: 18px;color:#fff; font-weight: 200 "
+          block large ion-button color="danger" (click)="goToLoginPage()">create new account</button>
+      </ion-col>
+
+    </ion-row> -->
 </ion-grid>
-</ion-content>
-<div style="position: absolute; bottom: 0px; width: 100%">
-    <div ion-label 
+<div style="position: absolute; bottom: 0px; width: 100%"> 
+    <ion-label  text-center ion-label 
          style="font-family:Montserrat;font-size: 18px;color:#fff; font-weight: 200 ;text-align: center">
-      <p>Already have an account? Then Sign In!</p>
-    </div>
-</div>
+      Already have an account? Then <button no-padding clear  ion-button  style="margin-left:0px;color:#ffcf00;margin-top:-5px" (tap)="goToLoginPage()" > Sign In!</button> 
+      
+    </ion-label>
+ </div>
+</ion-content>
+
+
+
